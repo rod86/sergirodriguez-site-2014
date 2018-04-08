@@ -1,0 +1,32 @@
+<h1>{{ meta.title }}</h1>  
+
+<div class="project">     
+    <div class="grid-two">
+        <div class="column one">
+            
+            <div class="grid-two details">
+                <div class="column one">{{ meta.project_date|date("F Y") }}</div>
+                {% if meta.project_company %}
+					<div class="column two">Working at {{ meta.project_company}}</div>
+				{% endif %}
+            </div>
+
+            {{ content }}
+        </div>
+        <div class="column two">
+            {% if meta.project_image %}
+            <img src="{{ base_url }}/uploads/portfolio/{{ meta.project_image }}" alt="{{ meta.title }}" class="shadow" />
+            {% endif %}             
+        </div>
+    </div>
+    {% if meta.project_url %}
+	    <div class="center">
+	        <a href="{{ meta.project_url }}" class="button" target="_blank">
+	            Visit site
+	        </a> 
+	    </div>
+    {% endif %}
+    <a href="{{ base_url }}/portfolio/">
+        Back to portfolio
+    </a> 
+</div>

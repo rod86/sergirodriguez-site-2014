@@ -1,0 +1,73 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+.remove-bullet-list{background:none;padding-left:0;margin-bottom:0}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+@font-face{font-family:'BebasNeueRegular';src:url('../fonts/BebasNeue-webfont.eot');src:url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/BebasNeue-webfont.woff') format('woff'),url('../fonts/BebasNeue-webfont.ttf') format('truetype'),url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot');src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf') format('truetype'),url('../fonts/icomoon.woff') format('woff'),url('../fonts/icomoon.svg#icomoon') format('svg');font-weight:normal;font-style:normal}body{color:#444;font-size:90%;line-height:1.5em;font-family:'PT Sans',Arial,sans-serif;font-weight:300}
+b{font-weight:bold}
+a{color:#84ae2f;text-decoration:underline;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+a:hover{color:#b4d76c}
+h1,h2,h3,h4,h5,h6{float:left;width:100%;margin:0 0 .5em 0;color:#84ae2f;font-family:'Dosis',sans-serif;font-weight:500;line-height:1em}
+h1{font-size:250%}
+h2{font-size:225%}
+h3{font-size:200%}
+h4{font-size:175%}
+h5{font-size:150%}
+h6{font-size:125%}
+p{font-size:90%;line-height:1.4em;margin:0 0 .5em 0}
+ul{margin-bottom:0.5em}
+li{background:url(../img/bullet-list.png) no-repeat 0 7px transparent;padding-left:14px}
+img{max-width:100%;display:block}
+hr{border:0;border-top:1px solid #d9d9d9;margin:1em 0}
+.grid-two{float:left;width:100%;margin-bottom:1em}.grid-two>.column{float:left;width:49%}
+.grid-two>.column.two{float:right}
+.grid-two.seventy-thirty>.column.one{width:69%}
+.grid-two.seventy-thirty>.column.two{width:29%}
+[class^="icomoon-"],[class*=" icomoon-"]{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.button{float:left;background-color:#84ae2f;color:#FFFFFF;font-weight:300;margin:0;text-decoration:none;border-radius:3px;padding:0.55em 2.5em;font-size:110%}.button:hover{color:#ffffff;background-color:#9fcc44}
+.button-transparent{float:left;background-color:#84ae2f;color:#FFFFFF;font-weight:300;margin:0;text-decoration:none;border-radius:3px;padding:0.55em 2.5em;font-size:110%;background-color:transparent;border:2px solid #ffffff}.button-transparent:hover{color:#ffffff;background-color:#9fcc44}
+.button-transparent:hover{background-color:transparent}
+.float-right{float:right}
+.center{text-align:center}
+.shadow{box-shadow:5px 5px 5px #888888}
+body{background:url("../img/bg-chruch.png") repeat scroll center top transparent}
+#page{float:left;width:100%;margin-top:1em}
+#page-wrapper{max-width:62em;padding:0 1em;margin:0 auto}
+header,#content{float:left;width:100%;margin-bottom:2.5em}
+footer{float:left;width:100%;padding:1em 0 2em;border-top:1px solid #bedd80}
+#logo{float:left;width:30%}
+#primary-nav{float:right;width:70%}#primary-nav ul{float:right;font-family:'BebasNeueRegular',Arial,sans-serif;font-size:150%;padding-top:1.2em}#primary-nav ul li{background:none;padding-left:0;margin-bottom:0;float:left;width:auto;padding-right:2em}#primary-nav ul li:last-child{padding-right:0}
+#primary-nav ul li a{text-decoration:none;color:#8C8C8C}#primary-nav ul li a:hover{color:#ccc}
+#primary-nav ul li.current a,#primary-nav ul li.current a:hover{color:#84ae2f}
+footer .social{float:left;width:100%;margin-bottom:1em}footer .social li{background:none;padding-left:0;margin-bottom:0;float:left;padding-right:0.5em}footer .social li a{float:left;border:2px solid #84ae2f;padding:0.8em;border-radius:50%;text-decoration:none}footer .social li a:before{color:#84ae2f;font-size:150%}
+footer .social li a:hover{opacity:0.8;filter:alpha(opacity=80);}
+footer .social li a span{display:none}
+footer .social li.icomoon-envelope a:before{content:"\e605"}
+footer .social li.icomoon-github a:before{content:"\e606"}
+footer .social li.icomoon-linkedin a:before{content:"\e604"}
+footer .social li.icomoon-stackoverflow a:before{content:"\e601"}
+#footer-menu{float:left;width:70%;font-size:90%}#footer-menu li{background:none;padding-left:0;margin-bottom:0;float:left;margin-right:1em}
+#credits{float:right;width:30%;text-align:right;font-size:75%;color:#848484}
+.cta-about-me{float:left;width:100%;margin-bottom:2.5em;box-shadow:5px 5px 5px #888888;position:relative}.cta-about-me .text{max-width:40%;position:absolute;top:0;left:0;bottom:0;padding:2em;background:rgba(0,0,0,0.7);color:#ffffff}.cta-about-me .text p{font-size:110%}
+.cta-about-me .text a.button{float:left;background-color:#84ae2f;color:#FFFFFF;font-weight:300;margin:0;text-decoration:none;border-radius:3px;padding:0.55em 2.5em;font-size:110%;background-color:transparent;border:2px solid #ffffff}.cta-about-me .text a.button:hover{color:#ffffff;background-color:#9fcc44}
+.cta-about-me .text a.button:hover{background-color:transparent}
+div.projects-list{float:left;width:100%}div.projects-list article{float:left;width:23.5%;margin:0 0 2% 2%}div.projects-list article:nth-child(4n+1){margin-left:0}
+div.projects-list article .box{float:left;width:100%;background-color:#ffffff;box-shadow:5px 5px 5px #888888}div.projects-list article .box .details{float:left;width:100%;padding:0.8em 0.8em 0 0.8em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}div.projects-list article .box .details h3{font-size:130%;margin:0 0 0.2em 0}
+div.projects-list article .box .details time,div.projects-list article .box .details .company{font-size:75%;line-height:1em}
+div.projects-list article .box .details time{font-weight:bold}
+div.projects-list article .box .more{float:left;width:100%}div.projects-list article .box .more a{float:right;padding:0.3em 1em;font-size:85%;color:#ffffff;background-color:#84ae2f;text-decoration:none}div.projects-list article .box .more a:hover{background-color:#9fcc44}
+div.projects-filter{float:left;width:100%;margin-bottom:1.5em}div.projects-filter li{background:none;padding-left:0;margin-bottom:0;float:left;margin-right:1em}div.projects-filter li:last-child{margin-right:0}
+div.projects-filter li a{display:block;font-size:95%;text-decoration:none;padding:0.3em 1.3em;border-radius:20px;border:1px solid #84ae2f;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}div.projects-filter li a:hover{border-color:#b4d76c;color:#b4d76c}
+div.projects-filter li a:focus{outline:none}
+div.projects-filter li.current a{background-color:#84ae2f;color:#ffffff}div.projects-filter li.current a:hover{border-color:#84ae2f}
+.project>.column.two{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:2em}
+.project .details .column.one{text-transform:uppercase;font-weight:bold}
+.project .column.two{font-style:italic;color:#6a6a6a;font-size:90%}
+.project .button{float:none}

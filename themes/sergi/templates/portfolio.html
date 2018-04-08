@@ -1,0 +1,16 @@
+<h1>{{ meta.title }}</h1>
+
+<div class="projects-filter">
+    <ul>
+    	<li{% if is_tag!=true %} class="current"{% endif %}>
+    		<a href="{{ base_url }}/portfolio/">All</a>
+    	</li>
+    	{% for tag in tags %}
+        <li{% if tag.key==current_tag %} class="current"{% endif %}>
+        	<a href="{{ tag.url }}">{{ tag.label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include 'partials/projects_list.html' %}

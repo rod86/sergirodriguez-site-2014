@@ -1,0 +1,19 @@
+
+.transition(@duration: 0.3s; @property: all;) {
+    -moz-transition: @property @duration ease-out;
+    -o-transition: @property @duration ease-out;
+    -webkit-transition: @property @duration ease-out;
+    transition: @property @duration ease-out;
+}
+
+.box-sizing (@mode: border-box){
+    -webkit-box-sizing: @mode; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: @mode;    /* Firefox, other Gecko */
+	box-sizing: @mode;         /* Opera/IE 8+ */
+}
+
+.remove-bullet-list {
+    background: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}

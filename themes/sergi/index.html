@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+        {% if meta.description %}
+            <meta name="description" content="{{ meta.description }}"> 
+        {% endif %}{% if meta.robots %}
+            <meta name="robots" content="{{ meta.robots }}">
+        {% endif %}
+        
+        <!--[if lt IE 9]>
+    	<script src="{{ theme_url }}/js/html5.js"></script>
+    	<![endif]-->
+        
+        <link rel='stylesheet' href='{{ theme_url }}/css/main.css' type='text/css' media='all' />
+        
+    </head>
+    <body>
+        <div id="page">
+            <div id="page-wrapper">
+                
+                <header role="banner">
+                    <div id="logo">
+                        <img src="{{ theme_url }}/img/logo.png" alt="logo alt" />
+                    </div>
+                    <nav id="primary-nav" role="navigation">
+                        <ul>
+                            {% for page in pages.main %}                            
+                            <li{% if page.is_active %} class="current"{% endif %}>
+                                <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </header>
+                    
+                {% if meta.layout == 'home' %}
+                    {% include 'partials/cta_about_me.html' %}
+                {% endif %}
+
+                <div id="content">   
+                    
+                    {% if meta.layout == 'home' %}
+                        {% include 'templates/home.html' %}
+                    {% elseif meta.layout == 'portfolio' %}
+                        {% include 'templates/portfolio.html' %}
+                    {% elseif meta.layout == 'project' %}
+                        {% include 'templates/project.html' %}
+                    {% elseif meta.layout == 'about' %}
+                        {% include 'templates/about.html' %}
+                    {% elseif meta.layout == 'contact' %}
+                        {% include 'templates/contact.html' %}
+                    {% else %}
+                        {% include 'templates/default.html' %}
+                    {% endif %}
+                                  
+                </div>
+
+                <footer>
+                    <div class="social">
+                        <ul>
+                            <li class="icomoon-envelope">
+                                <a href="mailto:{{ config.social.email }}" title="Email">
+                                    <span>Email</span>
+                                </a>
+                            </li>                            
+                            <li class="icomoon-linkedin">
+                                <a href="{{ config.social.linkedin }}" target="_blank" title="LinkedIn">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="icomoon-stackoverflow">
+                                <a href="{{ config.social.stackoverflow }}" target="_blank" title="Stackoverflow Careers">
+                                    <span>Stackoverflow Careers</span>
+                                </a>
+                            </li>
+                            <li class="icomoon-github">
+                                <a href="{{ config.social.github }}" target="_blank" title="Github">
+                                    <span>Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footer-menu">
+                        <ul>
+                        	{% for page in pages.footer %}                            
+                            <li>
+                                <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+                            </li>
+                            {% endfor %}                         
+                        </ul>
+                    </div>
+                    <div id="credits">
+                        Designed by Sergi Rodriguez &copy; 2014
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+</html>

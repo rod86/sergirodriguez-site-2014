@@ -1,0 +1,25 @@
+<div class="projects-list">
+	{% for page in pages.portfolio %}
+    <article>
+        <div class="box">
+            {% if page.project_image_small %}
+            <img src="{{ base_url }}/uploads/portfolio/{{ page.project_image_small }}" alt="{{ page.title }}"/>     
+            {% endif %}              
+            <div class="details">
+                <h3>{{ page.title }}</h3>
+                <time datetime="2009-11-13">{{ page.project_date|date("F Y") }}</time>
+                <div class="company">
+                    {% if page.project_company %}
+                        Working at {{ page.project_company}}
+                    {% else %}
+                        &nbsp;
+                    {% endif %}
+                    </div>                                    
+            </div>
+            <div class="more">
+                <a href="{{ page.url }}" class="icon">View</a>
+            </div>
+        </div>             
+    </article>
+    {% endfor %}
+</div>
